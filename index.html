@@ -48,6 +48,9 @@
 
     <!--Hero-->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="hero">
+            <h1>Viaja por <br><span class="type fw-bold"></span></h1>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="Fotografia Llamas en el Desierto de Atacama">
@@ -68,6 +71,8 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    
     <!--Cierra Hero-->
 
     <!--Quienes somos-->
@@ -114,43 +119,95 @@
         <h2 class="fs-2 text-center fw-medium mb-5 text-uppercase py-4">destacados</h2>
         <div class="row">
             <div class="col-12 col-sm-3 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </div>
             <div class="col-12 col-sm-3 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Lorem, ipsum dolor</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem, ipsum dolor</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </div>
             <div class="col-12 col-sm-3 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur.</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur.</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </div>
             <div class="col-12 col-sm-3 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </div>
         </div>
     </section>
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Norte de Chile</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-modal px-0" src="./assets/img/card3.jpg" alt="" srcset="">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Personas</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Noches</th>
+                        <th scope="col">Pasajes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>$000.000</td>
+                        <td>$000.000</td>
+                        <td>$000.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>$000.000</td>
+                        <td><strong>$000.000*</strong></td>
+                        <td>$000.000</td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                  <p class="fst-italic text-end">*Precio mas conveniente</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info text-white">Comprar Paquete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Modal-->
 
     <!--Cierra Destacados-->
 
@@ -158,17 +215,17 @@
     <section id="contacto" class="container mb-5 pt-3 text-white">
         <h2 class="fs-2 text-center fw-medium mb-5 text-uppercase py-4">contacto</h2>
         
-        <!--Typeform-->
+        <!--Typeform
         <div class="botonC text-center">
             <h3 class="my-3"> ¿Podemos Ayudarte?</h3>
             <a target="_blank" href="https://mkxp0ga8ipp.typeform.com/to/ZgVzAAJ5">
                 <button type="button" class="btn btn-info btn-md text-white mb-4">¡Hablemos!</button>
             </a>
         </div>
-        <!--Cierra Typeform-->
+        Cierra Typeform-->
 
 
-        <!--HTML
+        <!--HTML-->
         <form>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
@@ -185,7 +242,7 @@
             </div>
             <button type="submit" class="btn btn-info text-white">Enviar</button>
           </form>
-          Cierre HTML-->
+          <!--Cierre HTML-->
     </section>
     <!--Cierra Contacto-->
 
@@ -208,7 +265,7 @@
     <!--Cierra Footer-->
 
 
-
+    <!--Libreria Typed-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!--JQ 3.6-->

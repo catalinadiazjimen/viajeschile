@@ -8,9 +8,33 @@ body {
     background-color: black !important;
 }
 
+.carousel-item {
+    height: 100vh;
+    width: 100%;
+    min-height: 350px;
+}
+
 h2 {
     border-bottom: 1px solid #434343;
 }
+
+button .modal {
+    border: none;
+    color: white !important;
+}
+
+.img-modal {
+    width: 100%;
+}
+
+.hero span { 
+    text-shadow: -4px 5px 10px #c0c0c0;
+}
+
+.card-modal {
+    height: 23rem;
+}
+
 
 
 /*Small devices (landscape phones, 576px and down)*/
@@ -18,6 +42,27 @@ h2 {
   
     .container {
         max-width: 85% !important;
+    }
+
+    .hero {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        z-index: 3;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+          -webkit-transform: translate3d(-50%,-50%,0);
+             -moz-transform: translate3d(-50%,-50%,0);
+              -ms-transform: translate3d(-50%,-50%,0);
+               -o-transform: translate3d(-50%,-50%,0);
+                  transform: translate3d(-50%,-50%,0);
+    }
+    .hero h1 {
+        font-size: 2em;    
+        margin: 0;
+        padding: 0;
     }
 
 }
@@ -38,7 +83,7 @@ h2 {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
 
-    .card-img-top {
+    button .card-img-top {
         width: 100%;
         height: 13vw;
     }
@@ -46,6 +91,31 @@ h2 {
     .container {
         width: 85% !important;
         margin: auto !important;
+    }
+
+    .hero {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        z-index: 3;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+          -webkit-transform: translate3d(-50%,-50%,0);
+             -moz-transform: translate3d(-50%,-50%,0);
+              -ms-transform: translate3d(-50%,-50%,0);
+               -o-transform: translate3d(-50%,-50%,0);
+                  transform: translate3d(-50%,-50%,0);
+    }
+    .hero h1 {
+        font-size: 4em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-modal {
+        width: 100%;
     }
 
 }

@@ -1,9 +1,13 @@
-// Can also be included with a regular script tag
-import Typed from 'typed.js';
 
-var options = {
-  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-  typeSpeed: 40
-};
-
-var typed = new Typed('.element', options);
+/*Libreria Typed.js*/
+var typed = new Typed('.type', {
+  strings: [
+  'El Desierto', 
+  'Isla de Pascua',
+  'La Patagonia',
+],
+  typeSpeed: 40,
+  backSpeed: 40,
+  backDelay: 3800,
+  loop: true,
+});
