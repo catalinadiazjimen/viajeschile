@@ -25,7 +25,7 @@
     
     <!--Navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -71,8 +71,6 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    
     <!--Cierra Hero-->
 
     <!--Quienes somos-->
@@ -111,14 +109,13 @@
             </div>
         </div>
     </section>
-
     <!--Cierra Quienes somos-->
 
     <!--Destacados-->
     <section id="destacado" class="container pt-3 text-white">
         <h2 class="fs-2 text-center fw-medium mb-5 text-uppercase py-4">destacados</h2>
         <div class="row">
-            <div class="col-12 col-sm-3 mb-5">
+            <div class="col-12 col-sm-3 mb-5 tooltip-color" data-toggle="tooltip" data-placement="top" title="Revisa los paquetes que tenemos para ti">
                 <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                     <div class="card h-100" style="width: 18rem;">
                         <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
@@ -129,7 +126,7 @@
                     </div>
                 </button>
             </div>
-            <div class="col-12 col-sm-3 mb-5">
+            <div class="col-12 col-sm-3 mb-5 tooltip-color" data-toggle="tooltip" data-placement="top" title="Revisa los paquetes que tenemos para ti">
                 <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                     <div class="card h-100" style="width: 18rem;">
                         <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
@@ -140,7 +137,7 @@
                     </div>
                 </button>
             </div>
-            <div class="col-12 col-sm-3 mb-5">
+            <div class="col-12 col-sm-3 mb-5 tooltip-color" data-toggle="tooltip" data-placement="top" title="Revisa los paquetes que tenemos para ti">
                 <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                     <div class="card h-100" style="width: 18rem;">
                         <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
@@ -151,7 +148,7 @@
                     </div>
                 </button>
             </div>
-            <div class="col-12 col-sm-3 mb-5">
+            <div class="col-12 col-sm-3 mb-5 tooltip-color" data-toggle="tooltip" data-placement="top" title="Revisa los paquetes que tenemos para ti">
                 <button class="card-modal text-white text-start rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                     <div class="card h-100" style="width: 18rem;">
                         <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
@@ -175,27 +172,24 @@
             </div>
             <div class="modal-body">
                 <img class="img-modal px-0" src="./assets/img/card3.jpg" alt="" srcset="">
-                <table class="table">
+                <table class="table col-12">
                     <thead>
                       <tr>
                         <th scope="col">Personas</th>
-                        <th scope="col">Destino</th>
-                        <th scope="col">Noches</th>
-                        <th scope="col">Pasajes</th>
+                        <th scope="col">Cant días</th>
+                        <th scope="col">Precio</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>$000.000</td>
-                        <td>$000.000</td>
+                        <td>2 días <br> 1 noche</td>
                         <td>$000.000</td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>$000.000</td>
+                        <td>4 días <br> 3 noches</td>
                         <td><strong>$000.000*</strong></td>
-                        <td>$000.000</td>
                       </tr> 
                     </tbody>
                   </table>
@@ -207,25 +201,19 @@
           </div>
         </div>
       </div>
-    <!--Modal-->
-
+    <!--Cierra Modal-->
     <!--Cierra Destacados-->
 
     <!--Quienes Contacto-->
     <section id="contacto" class="container mb-5 pt-3 text-white">
         <h2 class="fs-2 text-center fw-medium mb-5 text-uppercase py-4">contacto</h2>
         
-        <!--Typeform
-        <div class="botonC text-center">
-            <h3 class="my-3"> ¿Podemos Ayudarte?</h3>
-            <a target="_blank" href="https://mkxp0ga8ipp.typeform.com/to/ZgVzAAJ5">
-                <button type="button" class="btn btn-info btn-md text-white mb-4">¡Hablemos!</button>
-            </a>
-        </div>
-        Cierra Typeform-->
-
-
-        <!--HTML-->
+        <!--Formulario Typeform
+        <div class="py-5 form-typeform">
+            <div data-tf-widget="HrBeLJgA" data-tf-iframe-props="title=Viajes Chile" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="https://embed.typeform.com/next/embed.js"></script>        </div>
+        Cierra Formulario Typeform-->
+       
+        <!--Formulario HTML-->
         <form>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
@@ -240,9 +228,9 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Descripción del Mensaje"></textarea>
             </div>
-            <button type="submit" class="btn btn-info text-white">Enviar</button>
+            <button id="enviarcorreo" type="submit" class="btn btn-info text-white">Enviar</button>
           </form>
-          <!--Cierre HTML-->
+          <!--Cierre Formulario HTML-->
     </section>
     <!--Cierra Contacto-->
 
@@ -251,13 +239,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6">
-                <h3 class="text-uppercase fw-light text-center">Viajes Chile</h3>
+                <a href="./index.html"><h3 class="text-uppercase fw-light ">Viajes Chile</h3></a>
             </div>
-            <div class="col-12 col-sm-6 text-center">
-                <i class="fab fa-github-square fa-2x px-2"></i>
-                <i class="fab fa-linkedin fa-2x px-2"></i>
-                <i class="fab fa-twitter-square fa-2x px-2"></i>
-                <i class="fab fa-facebook-square fa-2x px-2"></i>
+            <div class="col-12 col-sm-6 text-end">
+                <a href="https://www.github.com" target="_blank"><i class="fab fa-github-square fa-2x px-2"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x px-2"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x px-2"></i></a>
+                <a href="https://www.facebook.com" target="_blank"></a><i class="fab fa-facebook-square fa-2x px-2"></i></a>
             </div>
         </div>
     </div>
@@ -267,7 +255,6 @@
 
     <!--Libreria Typed-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
     <!--JQ 3.6-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--JS Boostrap 5-->
